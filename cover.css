@@ -106,7 +106,7 @@
  */
                 
                 .background-image {
-                    background-image: url(https://frdclav.github.io/images/iu.jpg);
+                    background-image: url(images/iu.jpg);
                     background-attachment: fixed;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -119,6 +119,14 @@
                     position: fixed;
                     left: 0;
                     top: 0;
+                }
+                
+                @media only screen and (orientation: portrait) {}
+                
+                {
+                    .background-image {
+                        background-image: url(images/iu_port.jpg);
+                    }
                 }
                 /*
  * Font
