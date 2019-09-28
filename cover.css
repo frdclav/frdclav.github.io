@@ -112,7 +112,7 @@
                     background-position: center;
                     height: 100%;
                     width: 100%;
-                    filter: blur(20px);
+                    filter: blur(5px);
                     -webkit-filter: blur(5px);
                     clear: both;
                     z-index: -1;
@@ -121,9 +121,7 @@
                     top: 0;
                 }
                 
-                @media only screen and (orientation: portrait) {}
-                
-                {
+                @media only screen and (orientation: portrait) {
                     .background-image {
                         background-image: url(images/iu_port.jpg);
                     }
