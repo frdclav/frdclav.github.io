@@ -122,12 +122,11 @@
                     left: 0;
                     top: 0;
                 }
-                
-                @media only screen and (orientation: portrait) {
+                /* @media only screen and (orientation: portrait) {
                     .background-image {
                         background-image: url(images/iu_port.jpg);
                     }
-                }
+                } */
                 /*
  * Font
  */
