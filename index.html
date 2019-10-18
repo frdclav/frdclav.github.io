@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" style="height: 100%;">
+<html class="no-js" style="height: 100%; overflow: hidden;">
 <!--<![endif]-->
 
 <head>
@@ -20,10 +20,11 @@
             font-family: 'Bungee Shade', serif;
             display: inline-block;
             padding: 3rem;
-            font-size: 15vw;
+            font-size: 10rem;
             color: whitesmoke;
             text-shadow: 1px 1px #444444;
             text-decoration: none;
+            text-align: center;
         }
         /* .enter:hover {
             transform: scale(1.15, 1.15);
@@ -41,13 +42,16 @@
             text-indent: 0;
             letter-spacing: 3vw;
             text-transform: uppercase;
-            width: 100%
+            width: 100%;
+            position: absolute;
+            margin: auto;
         }
         
         .flexWrapper {
             display: flex;
-            height: 100%;
-            min-width: 100%
+            min-height: 100vh;
+            min-width: 100vw;
+            margin: 0;
         }
         
         @media screen and (min-width: 1080px) {
@@ -61,20 +65,26 @@
                 font-size: 54px;
             }
         }
+        
+        @media screen and (max-width: 300px) {
+            .enter {
+                font-size: 43px;
+            }
+        }
     </style>
 </head>
 
-<body id="enter-body" style="height: 100vh;width:100vw; margin:0 0 0 0;text-align:center;background-attachment:fixed;background-position: center;background-size:cover;background-image: url('');">
+<body id="enter-body" style="height: 100vh;width:100vw; margin:0;text-align:center; overflow:hidden;">
 
 
 
 
-    <div class=" flexWrapper " style="width:60vw;border: 0 double black;margin: auto; ">
-        <div style="width:auto;overflow: hidden;">
-            <img id="picture" src="https://frdc.info/Bootstrap-Portfolio/assets/images/pass_that.jpg" style="width:100vw; min-width:800px; min-height:100vh;">
+    <div class=" flexWrapper " style=" ">
+        <div style="overflow: hidden; width:100%;">
+            <img id="picture" src="https://frdc.info/Bootstrap-Portfolio/assets/images/pass_that.jpg" style=" overflow:hidden;object-fit: cover; height:100vh;width:100vw;">
 
         </div>
-        <div class=" enterWrapper " style="position:absolute; margin:auto; ">
+        <div class=" enterWrapper " style=" ">
             <a id="enter-button " href="https://frdc.info/Bootstrap-Portfolio " class="enter ">ENTER</a>
         </div>
     </div>
