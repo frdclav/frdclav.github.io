@@ -19,12 +19,13 @@
         .enter {
             font-family: 'Bungee Shade', serif;
             display: inline-block;
-            padding: 3rem;
-            font-size: 15vw;
+            margin: 3rem;
+            font-size: 108px;
             color: whitesmoke;
             text-shadow: 1px 1px #444444;
             text-decoration: none;
             text-align: center;
+            /* object-fit: contain; */
         }
         /* .enter:hover {
             transform: scale(1.15, 1.15);
@@ -38,13 +39,15 @@
         .enterWrapper {
             text-align: center;
             align-self: center;
-            flex-grow: 1;
+            /* flex-grow: 1; */
             text-indent: 0;
             letter-spacing: 3vw;
             text-transform: uppercase;
             width: 60vw;
             position: absolute;
-            margin: auto;
+            /* margin: 0 auto 0 auto; */
+            margin-left: 20vw;
+            margin-right: 20vw;
         }
         
         .flexWrapper {
@@ -54,21 +57,28 @@
             margin: 0;
         }
         
-        @media screen and (min-width: 1080px) {
+        @media screen and (max-width: 1080px) {
             .enter {
-                font-size: 162px;
+                font-size: 10vw;
             }
         }
         
         @media screen and (max-width: 360px) {
             .enter {
-                font-size: 54px;
+                font-size: 36px;
+                margin: 0;
             }
         }
         
         @media screen and (max-width: 300px) {
             .enter {
-                font-size: 43px;
+                font-size: 28px;
+            }
+        }
+        
+        @media screen and (max-width: 150px) {
+            .enter {
+                font-size: 15px;
             }
         }
     </style>
