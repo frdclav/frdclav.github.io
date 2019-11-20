@@ -45,10 +45,10 @@ function portfolioObj(title, image, desc, link) {
     // function to display portfolio item
     this.showItem = function() {
         var newDiv = $("<div>");
-        newDiv.addClass('card m-3 flex-fill align-self-center');
+        newDiv.addClass('card m-3 flex-fill align-self-center rounded-0 border-dark');
         newDiv.attr('style', 'min-width:200px;width:35vw;')
         var newCardBody = $("<div>");
-        newCardBody.addClass('card-body')
+        newCardBody.addClass('card-body bg-warning')
         var newImg = $("<img>");
         newImg.addClass('img-fluid');
         newImg.attr('src', this.img);
@@ -60,12 +60,12 @@ function portfolioObj(title, image, desc, link) {
         newDesc.addClass("card-text")
         newDesc.text(this.description)
         var newBtn = $("<a>");
-        newBtn.addClass("btn btn-secondary")
+        newBtn.addClass("btn btn-warning rounded-0 border-dark")
         newBtn.attr('href', this.link)
         newBtn.text('Learn More!')
 
         newDiv.append(newCardBody);
-        newDiv.prepend(newImg)
+        // newDiv.prepend(newImg)
         newCardBody.append(newTitle, newDesc, newBtn)
         $("#portfolio-space").append(newDiv)
     }
