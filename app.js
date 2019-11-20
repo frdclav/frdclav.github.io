@@ -46,7 +46,7 @@ function portfolioObj(title, image, desc, link) {
     this.showItem = function() {
         var newDiv = $("<div>");
         newDiv.addClass('card m-3 flex-fill align-self-center');
-        newDiv.attr('style', 'width:35vw;')
+        newDiv.attr('style', 'min-width:200px;width:35vw;')
         var newCardBody = $("<div>");
         newCardBody.addClass('card-body')
         var newImg = $("<img>");
