@@ -87,3 +87,11 @@ var listOfPortfolioItems = [a, b, c, d, e]
 listOfPortfolioItems.forEach(element => {
     element.showItem();
 })
+
+
+
+// gallery to lightroom
+$('#gallery-button').click(function() {
+    window.open('https://lightroom.adobe.com/gallery/ae45e006986a4c009abe7788dea4b5b6');
+    return false;
+});

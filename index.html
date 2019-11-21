@@ -52,6 +52,11 @@
                 <li class="nav-item  rounded-0 border-dark m-1">
                     <a class="p-2 nav-link btn btn-warning rounded-0 border-dark" href="#fourth">Contact</a>
                 </li>
+                <li class="nav-item rounded-0 border-dark m-1">
+                    <a class="p-2 nav-link btn btn-warning rounded-0 border-dark" data-toggle="modal" data-target="#gallery-modal">
+                        Gallery
+                    </a>
+                </li>
             </ul>
         </div>
         <button class="navbar-toggler mx-auto m-1 border-0" style="position: fixed; bottom: 5vh; right: 5vw" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,6 +80,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#fourth">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#gallery-modal" href=''>Gallery</a>
                         </li>
                     </ul>
                 </div>
@@ -140,6 +148,25 @@
 
     </div>
 
+    <!-- gallery modal -->
+    <div class="modal fade " tabindex="-1" role="dialog" id="gallery-modal">
+        <div class="modal-dialog bg-warning rounded-0 border-dark" role="document">
+            <div class="modal-content bg-warning rounded-0 border-dark">
+                <div class="modal-header bg-warning rounded-0 border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body bg-warning rounded-0 border-dark">
+                    <p>Check out my gallery on lightroom.adobe.com by clicking below.</p>
+                </div>
+                <div class="modal-footer bg-warning rounded-0 border-dark">
+                    <button type="button" class="btn btn--warning rounded-0 border-dark" id="gallery-button">Go to lightroom.adobe.com</button>
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
