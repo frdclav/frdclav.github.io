@@ -1,9 +1,9 @@
-$('.nav-link').on('click', function(e) {
+$('.nav-link').on('click', function (e) {
     e.preventDefault()
     console.log('and were moving to ', $(this).attr('href'))
     $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top,
-        },
+        scrollTop: $($(this).attr('href')).offset().top,
+    },
         250,
         'linear'
     )
@@ -25,11 +25,11 @@ function slider() {
     }
 
 }
-$(window).scroll(function() {
+$(window).scroll(function () {
     windowHeight = $(window).height();
     slider();
 });
-$(document).ready(function() {
+$(document).ready(function () {
     windowHeight = $(window).height();
     slider();
 });
@@ -43,9 +43,9 @@ function portfolioObj(title, image, desc, link) {
     this.link = link
 
     // function to display portfolio item
-    this.showItem = function() {
+    this.showItem = function () {
         var newDiv = $("<div>");
-        newDiv.addClass('card m-3 flex-fill align-self-center rounded-0 border-dark');
+        newDiv.addClass('card m-3 flex-fill align-self-center rounded-0 border-dark bg-warning');
         newDiv.attr('style', 'min-width:200px;width:35vw;')
         var newCardBody = $("<div>");
         newCardBody.addClass('card-body bg-warning')
@@ -91,7 +91,7 @@ listOfPortfolioItems.forEach(element => {
 
 
 // gallery to lightroom
-$('#gallery-button').click(function() {
+$('#gallery-button').click(function () {
     window.open('https://lightroom.adobe.com/gallery/ae45e006986a4c009abe7788dea4b5b6');
     return false;
 });
