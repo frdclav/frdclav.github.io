@@ -1,12 +1,19 @@
 $('.nav-link').on('click', function (e) {
     e.preventDefault()
-    console.log('and were moving to ', $(this).attr('href'))
-    $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top,
-    },
-        250,
-        'linear'
-    )
+    console.log(this.attr('href'))
+    // if (this.attr('href').includes("#")) {
+    //     console.log('and were moving to ', $(this).attr('href'))
+    //     $('html, body').animate({
+    //         scrollTop: $($(this).attr('href')).offset().top,
+    //     },
+    //         250,
+    //         'linear'
+    //     )
+    // } else {
+    //     window.open(this.attr('href'));
+    // return false;
+    // }
+
 })
 
 // function for floating menu
