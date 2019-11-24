@@ -1,18 +1,19 @@
 $('.nav-link').on('click', function (e) {
     e.preventDefault()
-    console.log(this.attr('href'))
-    // if (this.attr('href').includes("#")) {
-    //     console.log('and were moving to ', $(this).attr('href'))
-    //     $('html, body').animate({
-    //         scrollTop: $($(this).attr('href')).offset().top,
-    //     },
-    //         250,
-    //         'linear'
-    //     )
-    // } else {
-    //     window.open(this.attr('href'));
-    // return false;
-    // }
+    var curLink = $(this).attr('href')
+    // console.log($(this).attr('href'))
+    if (curLink.includes("#")) {
+        console.log('and were moving to ', curLink)
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top,
+        },
+            250,
+            'linear'
+        )
+    } else {
+        window.open(curLink);
+    return false;
+    }
 
 })
 
@@ -69,6 +70,7 @@ function portfolioObj(title, image, desc, link) {
         var newBtn = $("<a>");
         newBtn.addClass("btn btn-warning rounded-0 border-dark")
         newBtn.attr('href', this.link)
+        newBtn.attr('target', '_blank')
         newBtn.text('Learn More!')
 
         newDiv.append(newCardBody);
