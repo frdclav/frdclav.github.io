@@ -12,7 +12,7 @@ $('.nav-link').on('click', function (e) {
         )
     } else {
         window.open(curLink);
-    return false;
+        return false;
     }
 
 })
@@ -91,7 +91,10 @@ var d = new portfolioObj("Star Wars RPG!", "assets/images/sw_rpg.png", "A simple
 
 var e = new portfolioObj("Word Guess Game", "assets/images/kpop_hangman_thumb.png", "A simple word guess game where players guess a letter or the entire word. The theme is K-Pop artists. Check it out on github below! ", "https://github.com/frdclav/word-guess-game")
 
-var listOfPortfolioItems = [a, b, c, d, e]
+var f = new portfolioObj("Netflix & Chill Generator", "", "A web app that provides users with a few random netflix selections based on mood/genre as well as suggestions for a type of cocktail to drink based on ingredients. The app utilizes the uNoGS and theCocktailDB apis as well as Materialize and sweetAlert2. This was a group project for my UCBX Full Stack Web Development cohort.", "https://github.com/frdclav/project-1")
+
+var listOfPortfolioItems = [f, e, d, c, b, a]
+
 
 listOfPortfolioItems.forEach(element => {
     element.showItem();
