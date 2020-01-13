@@ -93,7 +93,13 @@ var e = new portfolioObj("Word Guess Game", "assets/images/kpop_hangman_thumb.pn
 
 var f = new portfolioObj("Netflix & Chill Generator", "", "A web app that provides users with a few random netflix selections based on mood/genre as well as suggestions for a type of cocktail to drink based on ingredients. The app utilizes the uNoGS and theCocktailDB apis as well as Materialize and sweetAlert2. This was a group project for my UCBX Full Stack Web Development cohort.", "https://github.com/frdclav/project-1")
 
-var listOfPortfolioItems = [f, e, d, c, b, a]
+var g = new portfolioObj("Liri-Node-App", "", "A CLI node app that allows the user to search for information on concerts, spotify songs, and movies. Uses node.js", "https://github.com/frdclav/liri-node-app")
+
+var h = new portfolioObj("Bamazon", "", "A CLI node app that uses mysql database to present a storefront for user to make purchases and admins to keep track of and manage product stock.", "https://github.com/frdclav/bamazon")
+
+var i = new portfolioObj("FriendFinder", "", "A web app built with nodeJS, express and deployed on heroku that allows users to take a survey and match with other compatible users. The app uses express to handle the api's necessary to get the app working.", "https://github.com/frdclav/friend-finder")
+
+var listOfPortfolioItems = [i, h, g,f, e, d, c, b, a]
 
 
 listOfPortfolioItems.forEach(element => {
