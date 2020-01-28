@@ -99,7 +99,9 @@ var h = new portfolioObj("Bamazon", "", "A CLI node app that uses mysql database
 
 var i = new portfolioObj("FriendFinder", "", "A web app built with nodeJS, express and deployed on heroku that allows users to take a survey and match with other compatible users. The app uses express to handle the api's necessary to get the app working.", "https://github.com/frdclav/friend-finder")
 
-var listOfPortfolioItems = [i, h, g,f, e, d, c, b, a]
+var j = new portfolioObj("Burgers!", "", "A web app built with nodeJS, express, handlebars, using an ORM to connect to a mysql database. This allows the user to record different burgers and keep track of whether the burger has been eaten or not. Simple app that stores data with mysql db.","https://github.com/frdclav/burger" )
+
+var listOfPortfolioItems = [j, i, h, g,f, e, d, c, b, a]
 
 
 listOfPortfolioItems.forEach(element => {
