@@ -99,9 +99,11 @@ var h = new portfolioObj("Bamazon", "", "A CLI node app that uses mysql database
 
 var i = new portfolioObj("FriendFinder", "", "A web app built with nodeJS, express and deployed on heroku that allows users to take a survey and match with other compatible users. The app uses express to handle the api's necessary to get the app working.", "https://github.com/frdclav/friend-finder")
 
-var j = new portfolioObj("Burgers!", "", "A web app built with nodeJS, express, handlebars, using an ORM to connect to a mysql database. This allows the user to record different burgers and keep track of whether the burger has been eaten or not. Simple app that stores data with mysql db.","https://github.com/frdclav/burger" )
+var j = new portfolioObj("Burgers!", "", "A web app built with nodeJS, express, handlebars, using an ORM to connect to a mysql database. This allows the user to record different burgers and keep track of whether the burger has been eaten or not. Simple app that stores data with mysql db.", "https://github.com/frdclav/burger")
 
-var listOfPortfolioItems = [j, i, h, g,f, e, d, c, b, a]
+var k = new portfolioObj("thundertunes", "", "A web app that allows users to upload music, sound tracks, and other audio files to share and collaborate with other artists. The app is built using nodejs, express, howlerjs for handling audio playback, amazon s3 for handling sound file storage, mysql for metadata on tracks. Check it out on heroku at project2berkeley.herokuapp.com", "https://github.com/frdclav/burger")
+
+var listOfPortfolioItems = [k, j, i, h, g, f, e, d, c, b, a]
 
 
 listOfPortfolioItems.forEach(element => {
