@@ -103,7 +103,9 @@ var j = new portfolioObj("Burgers!", "", "A web app built with nodeJS, express, 
 
 var k = new portfolioObj("thundertunes", "", "A web app that allows users to upload music, sound tracks, and other audio files to share and collaborate with other artists. The app is built using nodejs, express, howlerjs for handling audio playback, amazon s3 for handling sound file storage, mysql for metadata on tracks. Check it out on heroku at project2berkeley.herokuapp.com", "https://github.com/frdclav/project2")
 
-var listOfPortfolioItems = [k, j, i, h, g, f, e, d, c, b, a]
+var l = new portfolioObj("superfuturescraper", "", "A web app that allows users to scrape superfuture.com for the latest posts/articles, and leave comments on the articles. Articles are saved to mongodb. App uses mongoose, express, handlebars, cheerio and axios. Check it out: https://superfuturescraper.herokuapp.com/", "https://github.com/frdclav/mongoose-hw")
+
+var listOfPortfolioItems = [l, k, j, i, h, g, f, e, d, c, b, a]
 
 
 listOfPortfolioItems.forEach(element => {
