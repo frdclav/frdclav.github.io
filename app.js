@@ -105,7 +105,9 @@ var k = new portfolioObj("thundertunes", "", "A web app that allows users to upl
 
 var l = new portfolioObj("superfuturescraper", "", "A web app that allows users to scrape superfuture.com for the latest posts/articles, and leave comments on the articles. Articles are saved to mongodb. App uses mongoose, express, handlebars, cheerio and axios. Check it out: https://superfuturescraper.herokuapp.com/", "https://github.com/frdclav/mongoose-hw")
 
-var listOfPortfolioItems = [l, k, j, i, h, g, f, e, d, c, b, a]
+var m = new portfolioObj("moto-weather", "", "A web app aimed at motorcycle riders. The app helps users to plan motorcycle rides by allowing them to see the weather a different points in thier specified route. The app is built on the MERN stack and also implements react-map-gl, Deck.gl, and axios to make API calls to the OpenWeatherMap API. Check it out: http://moto-weather.herokuapp.com/", "https://github.com/frdclav/riders-on-the-storm-proj3")
+
+var listOfPortfolioItems = [m, l, k, f]
 
 
 listOfPortfolioItems.forEach(element => {
